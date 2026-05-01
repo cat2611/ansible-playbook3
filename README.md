@@ -31,6 +31,36 @@
 5. Напишите скрипт на bash: автоматизируйте поднятие необходимых контейнеров, запуск ansible-playbook и остановку контейнеров.
 6. Все изменения должны быть зафиксированы и отправлены в ваш личный репозиторий.
 
+
+## Решение
+
+Проект демонстрирует работу с Ansible инвентори, group_vars, ansible-vault и Docker контейнерами.
+
+1_site.yml
+
+![1_site.yml](https://github.com/Doskaks/08-ansible-01-base_02.25/blob/master/1_site.yml.jpg)
+
+4_prod.yml
+
+![4_prod.yml](https://github.com/Doskaks/08-ansible-01-base_02.25/blob/master/4_prod.yml.jpg)
+
+5-6_с фактамиl
+
+![5-6_с фактамиl](https://github.com/Doskaks/08-ansible-01-base_02.25/blob/master/5-6_%D1%81%20%D1%84%D0%B0%D0%BA%D1%82%D0%B0%D0%BC%D0%B8l.jpg)
+
+7-8_с парольюl
+
+![7-8_с парольюl](https://github.com/Doskaks/08-ansible-01-base_02.25/blob/master/7-8_%D1%81%20%D0%BF%D0%B0%D1%80%D0%BE%D0%BB%D1%8C%D1%8El.jpg)
+
+9_ansible-doc
+
+![9_ansible-doc](https://github.com/Doskaks/08-ansible-01-base_02.25/blob/master/9_ansible-doc.jpg)
+
+10_prod.yml
+
+![10_prod.yml](https://github.com/Doskaks/08-ansible-01-base_02.25/blob/master/10_prod.yml.jpg)
+
+
 ---
 
 ### Как оформить решение задания

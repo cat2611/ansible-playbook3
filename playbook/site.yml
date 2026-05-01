@@ -1,10 +1,11 @@
 ---
-  - name: Print os facts
-    hosts: all
-    tasks:
-      - name: Print OS
-        debug:
-          msg: "{{ ansible_distribution }}"
-      - name: Print fact
-        debug:
-          msg: "{{ some_fact }}"
+- name: Print os facts and some_fact
+  hosts: all
+  tasks:
+    - name: Print OS distribution
+      debug:
+        msg: "Host: {{ inventory_hostname }}, OS: {{ ansible_distribution }}"
+    
+    - name: Print some_fact value
+      debug:
+        msg: "some_fact for {{ inventory_hostname }} = {{ some_fact }}"

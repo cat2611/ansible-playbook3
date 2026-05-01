@@ -1,9 +1,16 @@
----
-  el:
-    hosts:
-      centos7:
-        ansible_connection: docker
-  deb:
-    hosts:
-      ubuntu:
-        ansible_connection: docker
+all:
+  children:
+    el:
+      hosts:
+        centos7:
+          ansible_connection: docker
+    deb:
+      hosts:
+        ubuntu:
+          ansible_connection: docker
+          ansible_python_interpreter: /usr/bin/python3
+    local:
+      hosts:
+        localhost:
+          ansible_connection: local
+          some_fact: "local_control_node_fact"
